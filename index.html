@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Javascript" />
+    <title>Javascript</title>
+    <link rel="stylesheet" href="estilos/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/scripts/db.js"></script>
+    <script src="/scripts/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="centered-container">
+        <img
+          class="center-content"
+          src="/images/logojs.png"
+          width="250"
+          alt="Logo do Javascript, escudo amarelo, com as letras J e S"
+          title="Meu Dicionário Javascript"
+        />
+      </div>
+      <div>
+        <h1>Bem-vindo ao Meu Dicionário Javascript!</h1>
+    
+        <p>Escolha uma opção abaixo</p>
+        <select
+          title="Tópicos"
+          id="slc-topicos"
+          onchange="onSelectChange()"
+        ></select>
+
+<br/>
+<br/>
+
+        <label for="txt-desc" id="lbl-txt-desc">Descrição</label>
+        <br>
+        <textarea
+          id="txt-desc"
+          name="description"
+          title="Descrição"
+          placeholder=""
+        >
+        </textarea>
+      </div>
+    
+    </div>
+  </body>
+</html>
